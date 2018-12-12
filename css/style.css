@@ -5,6 +5,9 @@ body {
   }
   
   header,footer {
+    display:flex;
+    flex-direction: row;
+
     padding: 10px;
     color: white;
     background-color: black;
@@ -17,7 +20,8 @@ body {
     flex-wrap:wrap;
     margin: 5px;
     background-color: lightgrey;
-    padding:10%;
+    padding-left:10%;
+    padding-right:10%;
   }
   
   article {
@@ -29,9 +33,11 @@ body {
   
   nav ul {
     padding: 0;
+    display:inline;
   }
   
   nav ul li {
+    display: inline;
     display: inline;
     margin: 5px;
   }
@@ -40,7 +46,11 @@ body {
 }
 header>h1{
   margin-left:200px;
+  flex:10;
 }
 footer>p{
   margin-left:200px;
+}
+nav{
+  flex:3;
 }
